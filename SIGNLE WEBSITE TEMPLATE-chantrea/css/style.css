@@ -1,0 +1,534 @@
+/* * {
+    font-family: 'Montserrat';font-size: 22px;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    /* background: #b79292; */
+
+
+
+
+/* ____   ____ */
+
+/* scroll bar  */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+.btn{
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding:15px 30px;       
+}
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size: 35px;
+}
+h5{
+    font-size: 15px;
+}
+p{
+    font-size: 14px;
+}
+
+/* nav bar  */
+
+nav{
+    background: white;
+    display: flex;
+    padding: 15px 100px;
+    justify-content: space-between;
+}
+.nav-logo{
+    width: 200px;
+}
+.nav-menu{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-menu li {
+    list-style: none;
+}
+.nav-menu li a{
+    text-decoration: none;
+    font-size: medium;
+    color: black;
+}
+.navbar-btn{
+    background: black;
+}
+
+
+/* main container */
+/* company-registration-section */
+.company-registration-section{
+    background: #000;
+    color: white;
+    display: flex;
+    padding: 100px;
+    gap: 50px;
+}
+
+.main-registration-content{
+    width: 50%;
+    align-self: center;
+}
+.main-registration-content p{
+    margin-top: 10px;
+    font-size:medium;
+}
+.main-registration-content ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.main-registration-content ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.main-registration-content ul li img{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+.main-registration-form{
+    width:50%;
+}
+form{
+    padding: 50px;
+    background: white;
+    color: black;
+    border-radius: 30px;
+}
+.form-info{
+    display: flex;
+    gap: 30px;
+}
+.form-info div{
+    flex: 1;
+    margin:10px 0px;
+}
+.form-info div input{
+    width: 100%;
+    padding: 20px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.501);
+}
+.form-info div label{
+    font-size: 15px;
+}
+.form-info div input::placeholder{
+    font-size: 17px;
+    color: gray;
+}
+.form-info div label{
+    font-weight: bold;
+    background: #ffffff;
+}
+.form-info div>input, .form-btn{
+    margin-top:15px;
+}
+.form-btn{
+    width: 100%;
+    background: #ff0048;
+    font-size: 15px;
+    padding: 25px;
+    border-radius: 50px;
+}
+/* company-partner-section */
+.company-partner-section{
+    padding: 100px;
+}
+.company-partner-section h2{
+    text-align: center;
+}
+.partners{
+    display: flex;
+    align-items: start;
+    margin-top: 100px;
+}
+.partner{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px;
+}
+.partner:first-child{
+    padding-right: 50px;
+    border-right: 1px solid #00000030;
+}
+.partner:last-child{
+    padding-left: 50px;
+    border-left: 1px solid #00000030;
+}
+.partner:nth-child(2){
+   padding:0px 50px;
+}
+.partner p:first-child{
+    font-size: 20px;
+    line-height: 1.5;   
+}
+.company img{
+    width: 150px;
+    margin-top: 20px;
+}
+/* company-services-section */
+.company-services-section{
+    display: flex;
+    padding: 100px;
+    justify-content: space-between;
+    padding-top: 0;
+}
+.service{
+    width: 30%;
+}
+.service>*{
+    margin: 10px 0px;
+}
+.service img{
+    width: 50px;
+    border-radius: 5px;
+}
+.service p{
+    width: 100%;
+}
+/* company-call-to-call-service-section */
+.company-call-to-call-service-section{
+    display: flex;
+    padding: 100px;
+    padding-top: 0px;
+}
+.call-to-call-content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.call-to-call-content>*{
+    margin:10px;
+}
+.group-btn{
+    margin-top: 50px;
+}
+.group-btn .btn{
+    font-size: 14px;
+    padding:20px 40px;
+    background: #ff0048;
+
+}
+#talk-to-sale{
+    margin-left: 20px;
+    color: gray;
+    font-weight: lighter;
+    background: #ffffff;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+.call-to-call-img{
+    display: flex;;
+    flex:1;
+}
+.call-to-call-img img{
+    width: 80%;
+    margin: auto
+}
+.company-process-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+    padding-top: 0px;
+}
+.company-process-section h4{
+    color: #ff0048;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.company-process-section p{
+    width: 50%;
+    text-align: center;
+    margin-top: 10px;
+}
+.our-processes{
+    display: flex;
+    gap:30px;
+}
+.process{
+    flex: 1;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.process>*{
+    margin: 10px;
+}
+.process span{
+    width: 150px;
+    height: 150px;
+    background: rgb(255, 231, 231);
+    border-radius: 100px;
+    text-align: center;
+    line-height: 150px;
+    font-size: 50px;
+    font-weight: bolder;
+    margin: 50px;
+}
+.process p{
+    width: 100%;
+    text-align: center;
+}
+/* company-features-section */
+.company-features-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+    padding-top: 0px;
+}
+.company-features-section p{
+    margin-top: 10px;
+    width: 50%;
+    text-align: center;
+}
+.our-features{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+}
+.our-features .features{
+    display: flex;
+    gap: 30px;
+}
+
+.feature{
+    flex: 1;
+    display: flex;
+    border: 1px solid #cccccc5b;
+    padding: 50px;
+    border-radius: 20px;
+}
+.feature-content{
+    margin-top: 20px;
+}
+.feature img{
+    width: 70px;
+    height: 70px;
+   border-radius: 10px;
+}
+
+.company-fqa-section{
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    gap: 30px;
+}
+.fqa-cards{
+    display: flex;
+    gap:30px;
+}
+.fqa-card{
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+.fqa-card-question{
+    display: flex;
+    align-items: center;
+}
+.question{
+    font-size: 25px;
+}
+.fqa-card-question span{
+    font-size: 50px;
+    margin-left: 10px;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+}
+.footer-menu-section{
+    display: flex;
+}
+.menu{
+    flex: 1;
+}
+.menu-header{
+    text-transform: uppercase;
+}
+.menu ul {
+    margin-top: 40px;
+}
+.menu ul li{
+    list-style: none;
+    margin-top: 10px;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #4d4d4d;
+}
+.languages-section{
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgba(128, 128, 128, 0.55);
+    border-left: 0px;
+    border-right: 0px;
+    padding: 30px;
+    margin-top: 70px;
+}
+.languages-section a {
+    text-decoration: none;
+    padding: 10px;
+    color: #000;
+    font-size: 18px;
+}
+.languages-section a:first-child{
+    text-decoration: underline;
+}
+.footer-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+.footer-left ul{
+    display: flex;
+}
+.footer-left ul li{
+    list-style: none;
+    padding: 10px;
+}
+.footer-left ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+.footer-right p{
+    font-size: 18px;
+}
+/* phone */
+@media (max-width: 600px) {
+   .company-registration-section{
+    width: 120%;
+   }
+   .nav-container{
+    width: 120%;
+   }
+   .company-partner-section{
+    width: 120%;
+    height: 150%;
+    justify-content: center;
+    align-items: center;
+   }
+   .company-services-section{
+    width: 120%;
+   }
+   .company-call-to-call-service-section{
+    width: 120%;
+   }
+   .group-btn{
+    display: flex;
+   }
+   .company-process-section{
+    width: 120%;
+   }
+   .company-features-section{
+    width: 120%;
+   }
+   .company-fqa-section{
+    width: 120%;
+   }
+   .footer-container{
+    width: 130%;
+   }
+   .menu-header{
+    display: flex;
+    justify-content: center;
+   }
+
+}
+/* Tablets */
+@media (min-width:768px ) and (max-width:1024px) {
+    .company-registration-section{
+    width: 120%;
+   }
+   .nav-container{
+    width: 120%;
+   }
+   .company-partner-section{
+    width: 120%;
+    height: 150%;
+    justify-content: center;
+    align-items: center;
+   }
+   .company-services-section{
+    width: 120%;
+   }
+   .company-call-to-call-service-section{
+    width: 120%;
+   }
+   .group-btn{
+    display: flex;
+   }
+   .company-process-section{
+    width: 120%;
+   }
+   .company-features-section{
+    width: 120%;
+   }
+   .company-fqa-section{
+    width: 120%;
+   }
+   .footer-container{
+    width: 130%;
+   }
+   .menu-header{
+    display: flex;
+    justify-content: center;
+   }
+}
+
+
+/* Desktops  */
+@media (min-width: 1024px) {
+    .menu-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
